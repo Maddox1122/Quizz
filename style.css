@@ -62,3 +62,31 @@ li:focus {
     font-size: 1.5rem;
 }
 
+.div-main-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.media-items {
+    padding: 2rem;
+}
+
+.media-items > video {
+    box-shadow: #141311 2px 2px 2px 2px;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+}
+
+.media-items > h1 {
+    text-align: center;
+    display: block;
+    color: #33ff33;
+    background-color: #141311;
+    border-radius: 50%;
+}
