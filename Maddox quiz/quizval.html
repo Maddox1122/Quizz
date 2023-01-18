@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <script defer src="./quizval.js"></script>
+    <script src="./quizval.js"></script>
     <link rel="stylesheet" href="./quizval.css">
 </head>
 
@@ -28,7 +28,7 @@
             <div class="items">
                 <li><a href="#">Valorant</a></li>
             </div>
-            <nav />
+            <nav/>
     </header>
     <main>
         <section class="section-top">
@@ -62,22 +62,23 @@
             <div class="quiz-titel">
                 <h1>Hier start je de quiz</h1>
                 <h2>Voordat je de vragen start lees de informatie hierboven &uarr;</h2>
+                <h2>U heeft 1 poging voor de vraag</h2>
             </div>
             <div class="quiz-vragen">
                 <div class="vraag1">
                     <h2>Vraag 1:</h2>
                     <h2>Hoeveel agents zitten er in de game?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 1)">A: 19</button>
+                        <button id="button1.1" onclick="check('fout', 1)">A: 19</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 1)">B: 18</button>
+                        <button id="button1.2" onclick="check('fout', 1)">B: 18</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 1)">C: 22</button>
+                        <button id="button1g" onclick="check('goed', 1)">C: 22</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 1)">D: 21</button>
+                        <button id="button1.3" onclick="check('fout', 1)">D: 21</button>
                     </div>
                 </div>
             </div>
@@ -86,16 +87,16 @@
                     <h2>Vraag 2:</h2>
                     <h2>Hoeveel gamemodes zijn er?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 2)">A: 3</button>
+                        <button id="button2.1" onclick="check('fout', 2)">A: 3</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 2)">B: 4</button>
+                        <button id="button2.2" onclick="check('fout', 2)">B: 4</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 2)">C: 5</button>
+                        <button id="button2.3" onclick="check('fout', 2)">C: 5</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 2)">D: 6</button>
+                        <button id="button2g" onclick="check('goed', 2)">D: 6</button>
                     </div>
                 </div>
             </div>
@@ -104,16 +105,16 @@
                     <h2>Vraag 3:</h2>
                     <h2>Wat was de originele naam van Valorant?</h2>
                     <div class="antwoords">
-                        <button onclick="check('goed', 3)">A: Project A</button>
+                        <button id="button3g" onclick="check('goed', 3)">A: Project A</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 3)">B: Project V</button>
+                        <button id="button3.1" onclick="check('fout', 3)">B: Project V</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 3)">C: Project Shooter</button>
+                        <button id="button3.2" onclick="check('fout', 3)">C: Project Shooter</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 3)">D: Project Agents</button>
+                        <button id="button3.3" onclick="check('fout', 3)">D: Project Agents</button>
                     </div>
                 </div>
             </div>
@@ -122,16 +123,16 @@
                     <h2>Vraag 4:</h2>
                     <h2>Wat is de release date van Valorant?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 4)">A: 19 November 2019</button>
+                        <button id="button4.1" onclick="check('fout', 4)">A: 19 November 2019</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 4)">B: 2 Juni 2020</button>
+                        <button id="button4g" onclick="check('goed', 4)">B: 2 Juni 2020</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 4)">C: 16 Maart 2020</button>
+                        <button id="button4.2" onclick="check('fout', 4)">C: 16 Maart 2020</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 4)">D: 29 December 2020</button>
+                        <button id="button4.3" onclick="check('fout', 4)">D: 29 December 2020</button>
                     </div>
                 </div>
             </div>
@@ -140,16 +141,16 @@
                     <h2>Vraag 5:</h2>
                     <h2>Hoe oud moet je zijn om Valorant te spelen?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 5)">A: 18</button>
+                        <button id="button5.1" onclick="check('fout', 5)">A: 18</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 5)">B: 14</button>
+                        <button id="button5.2" onclick="check('fout', 5)">B: 14</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 5)">C: 11</button>
+                        <button id="button5.3" onclick="check('fout', 5)">C: 11</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 5)">D: 16</button>
+                        <button id="button5g" onclick="check('goed', 5)">D: 16</button>
                     </div>
                 </div>
             </div>
@@ -158,16 +159,16 @@
                     <h2>Vraag 6:</h2>
                     <h2>Hoeveel rondes moet je winnen om een competitive game te winnen?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 6)">A: 10</button>
+                        <button id="button6.1" onclick="check('fout', 6)">A: 10</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 6)">B: 9</button>
+                        <button id="button6.2" onclick="check('fout', 6)">B: 9</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 6)">C: 13</button>
+                        <button id="button6g" onclick="check('goed', 6)">C: 13</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 6)">D: 15</button>
+                        <button id="button6.3" onclick="check('fout', 6)">D: 15</button>
                     </div>
                 </div>
             </div>
@@ -176,16 +177,16 @@
                     <h2>Vraag 7:</h2>
                     <h2>Wat is de spike?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 7)">A: Een emote</button>
+                        <button id="button7.1" onclick="check('fout', 7)">A: Een emote</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 7)">B: Een pro player</button>
+                        <button id="button7.2" onclick="check('fout', 7)">B: Een pro player</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 7)">C: Een bom</button>
+                        <button id="button7g" onclick="check('goed', 7)">C: Een bom</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 7)">D: Een wapen</button>
+                        <button id="button7.3" onclick="check('fout', 7)">D: Een wapen</button>
                     </div>
                 </div>
             </div>
@@ -194,16 +195,16 @@
                     <h2>Vraag 8:</h2>
                     <h2>Hoe kon je de beta spelen?</h2>
                     <div class="antwoords">
-                        <button onclick="check('goed', 8)">A: Twitch drops</button>
+                        <button id="button8g" onclick="check('goed', 8)">A: Twitch drops</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 8)">B: Downloaden van website</button>
+                        <button id="button8.1" onclick="check('fout', 8)">B: Downloaden van website</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 8)">C: Whitelist krijgen van riot</button>
+                        <button id="button8.2" onclick="check('fout', 8)">C: Whitelist krijgen van riot</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 8)">D: Spel kopen op steam</button>
+                        <button id="button8.3" onclick="check('fout', 8)">D: Spel kopen op steam</button>
                     </div>
                 </div>
             </div>
@@ -212,16 +213,16 @@
                     <h2>Vraag 9:</h2>
                     <h2>In een competitive game hoe groot zijn de teams?</h2>
                     <div class="antwoords">
-                        <button onclick="check('fout', 9)">A: 4 groot</button>
+                        <button id="button9.1" onclick="check('fout', 9)">A: 4 groot</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 9)">B: 6 groot</button>
+                        <button id="button9.2" onclick="check('fout', 9)">B: 6 groot</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 9)">C: 10 groot</button>
+                        <button id="button9.3" onclick="check('fout', 9)">C: 10 groot</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('goed', 9)">D: 5 groot</button>
+                        <button id="button9g" onclick="check('goed', 9)">D: 5 groot</button>
                     </div>
                 </div>
             </div>
@@ -230,16 +231,16 @@
                     <h2>Vraag 10:</h2>
                     <h2>Hoeveel vormen van de shop zijn er</h2>
                     <div class="antwoords">
-                        <button onclick="check('goed', 10)">A: 3</button>
+                        <button id="button10g" onclick="check('goed', 10)">A: 3</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 10)">B: 4</button>
+                        <button id="button10.1" onclick="check('fout', 10)">B: 4</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 10)">C: 5</button>
+                        <button id="button10.2" onclick="check('fout', 10)">C: 5</button>
                     </div>
                     <div class="antwoords">
-                        <button onclick="check('fout', 10)">D: 2</button>
+                        <button id="button10.3" onclick="check('fout', 10)">D: 2</button>
                     </div>
                 </div>
             </div>
@@ -286,6 +287,9 @@
             <div class="score">
                 <h2>Voor je score klik op de knop &darr;</h2>
                 <button class="antwoord" id="score">Krijg score</button>
+                <div>
+                    
+                </div>
             </div>
         </section>
     </main>

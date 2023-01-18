@@ -150,14 +150,28 @@ li:focus {
     transition: all 1s ease;
     cursor: pointer;
     background-color: #d5e219;
-    box-shadow: #d5e219 2px 2px 2px 2px;
+    transform: scale(1.05);
 }
 
 .incorrect {
+    width: 30em;
+    padding: 16px;
+    margin: 4px;
+    border-radius: 6em;
+    color: black;
+    font-size: 1.2em;
+    border: none;
     background-color: #af230a;
 }
 
 .correct {
+    width: 30em;
+    padding: 16px;
+    margin: 4px;
+    border-radius: 6em;
+    color: black;
+    font-size: 1.2em;
+    border: none;
     background-color: #13df50;
 }
 
