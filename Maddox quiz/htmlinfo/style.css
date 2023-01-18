@@ -4,7 +4,6 @@ body {
     background-color: #d32a0c;
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow: hidden;
 }
 
 .primary-header {
@@ -18,6 +17,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 li {
@@ -38,4 +38,28 @@ li:hover {
 li:focus {
     transform: scale(1.2);
     transition: all 1s;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-info-items > p {
+    max-width: 60ems;
+}
+
+@media (min-width: 1200px) {
+    .top-info-items > h1 {
+        font-size: 3em;
+    }
+    .top-info-items > h2 {
+        font-size: 2em;
+    }
+    .top-info-items > p {
+        font-size: 1.2em;
+    }
 }
