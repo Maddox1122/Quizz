@@ -1,224 +1,135 @@
-let score = 0
+let score = 0;
+let numquiz = 0;
+let scoreimg = new Array()
+scoreimg.push('./media/logoval.png')
 
 function check(antwoord, vraag) {
-    if (vraag == 1) {
+    if (vraag == numquiz) {
         if (antwoord == 'goed') {
             score++
-            document.getElementById('button1g').style.background = '#13df50'
-            document.getElementById('button1.1').style.background = '#af230a'
-            document.getElementById('button1.2').style.background = '#af230a'
-            document.getElementById('button1.3').style.background = '#af230a'
-            document.getElementById('button1g').disabled = true
-            document.getElementById('button1.1').disabled = true
-            document.getElementById('button1.2').disabled = true
-            document.getElementById('button1.3').disabled = true
+            document.getElementById('button' + numquiz + 'g').style.background = '#13df50'
+            document.getElementById('button' + numquiz + 'g').disabled = true
+            document.getElementById('button' + numquiz + '.1').disabled = true
+            document.getElementById('button' + numquiz + '.2').disabled = true
+            document.getElementById('button' + numquiz + '.3').disabled = true
         } else if (antwoord == 'fout') {
-            document.getElementById('button1g').style.background = '#13df50'
-            document.getElementById('button1.1').style.background = '#af230a'
-            document.getElementById('button1.2').style.background = '#af230a'
-            document.getElementById('button1.3').style.background = '#af230a'
-            document.getElementById('button1g').disabled = true
-            document.getElementById('button1.1').disabled = true
-            document.getElementById('button1.2').disabled = true
-            document.getElementById('button1.3').disabled = true
+            document.getElementById('button' + numquiz + 'g').style.background = '#13df50'
+            document.getElementById('button' + numquiz + '.1').style.background = '#af230a'
+            document.getElementById('button' + numquiz + '.2').style.background = '#af230a'
+            document.getElementById('button' + numquiz + '.3').style.background = '#af230a'
+            document.getElementById('button' + numquiz + 'g').disabled = true
+            document.getElementById('button' + numquiz + '.1').disabled = true
+            document.getElementById('button' + numquiz + '.2').disabled = true
+            document.getElementById('button' + numquiz + '.3').disabled = true
         }
+    } else {
+        window.alert('U moet een van de vorige vragen nog invullen.')
     }
-    if (vraag == 2) {
-        if (antwoord == 'goed') {
+}
+
+let openvraagnum = 10;
+
+function ov1(openvraag) {
+    if (openvraag == openvraagnum && numquiz == 9) {
+        openvraagnum++
+        let ovraag1 = document.getElementById('textinput1').value
+        if (ovraag1 === 'controller') {
             score++
-            document.getElementById('button2g').style.background = '#13df50'
-            document.getElementById('button2.1').style.background = '#af230a'
-            document.getElementById('button2.2').style.background = '#af230a'
-            document.getElementById('button2.3').style.background = '#af230a'
-            document.getElementById('button2g').disabled = true
-            document.getElementById('button2.1').disabled = true
-            document.getElementById('button2.2').disabled = true
-            document.getElementById('button2.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button2g').style.background = '#13df50'
-            document.getElementById('button2.1').style.background = '#af230a'
-            document.getElementById('button2.2').style.background = '#af230a'
-            document.getElementById('button2.3').style.background = '#af230a'
-            document.getElementById('button2g').disabled = true
-            document.getElementById('button2.1').disabled = true
-            document.getElementById('button2.2').disabled = true
-            document.getElementById('button2.3').disabled = true
+            console.log('goed')
+            document.getElementById('ovraag1').disabled = true
+            document.getElementById('goedzo1').innerHTML = 'Goed!'
+        } else {
+            document.getElementById('goedzo1').innerHTML = 'Fout!'
+            document.getElementById('ovraag1').disabled = true
         }
+    } else {
+        window.alert('U moet nog een van de vorige vragen invullen.')
     }
-    if (vraag == 3) {
-        if (antwoord == 'goed') {
+}
+
+function ov2(openvraag) {
+    if (openvraag == openvraagnum) {
+        openvraagnum++
+        let ovraag2 = document.getElementById('textinput2').value
+        if (ovraag2 === 'duelist') {
             score++
-            document.getElementById('button3g').style.background = '#13df50'
-            document.getElementById('button3.1').style.background = '#af230a'
-            document.getElementById('button3.2').style.background = '#af230a'
-            document.getElementById('button3.3').style.background = '#af230a'
-            document.getElementById('button3g').disabled = true
-            document.getElementById('button3.1').disabled = true
-            document.getElementById('button3.2').disabled = true
-            document.getElementById('button3.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button3g').style.background = '#13df50'
-            document.getElementById('button3.1').style.background = '#af230a'
-            document.getElementById('button3.2').style.background = '#af230a'
-            document.getElementById('button3.3').style.background = '#af230a'
-            document.getElementById('button3g').disabled = true
-            document.getElementById('button3.1').disabled = true
-            document.getElementById('button3.2').disabled = true
-            document.getElementById('button3.3').disabled = true
+            document.getElementById('ovraag2').disabled = true
+            document.getElementById('goedzo2').innerHTML = 'Goed!'
+        } else {
+            document.getElementById('goedzo2').innerHTML = 'Fout!'
+            document.getElementById('ovraag2').disabled = true
         }
+    } else {
+        window.alert('U moet nog een van de vorige vragen invullen.')
     }
-    if (vraag == 4) {
-        if (antwoord == 'goed') {
+}
+
+function ov3(openvraag) {
+    if (openvraag == openvraagnum) {
+        openvraagnum++
+        let ovraag3 = document.getElementById('textinput3').value
+        if (ovraag3 === 'sentinel') {
             score++
-            document.getElementById('button4g').style.background = '#13df50'
-            document.getElementById('button4.1').style.background = '#af230a'
-            document.getElementById('button4.2').style.background = '#af230a'
-            document.getElementById('button4.3').style.background = '#af230a'
-            document.getElementById('button4g').disabled = true
-            document.getElementById('button4.1').disabled = true
-            document.getElementById('button4.2').disabled = true
-            document.getElementById('button4.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button4g').style.background = '#13df50'
-            document.getElementById('button4.1').style.background = '#af230a'
-            document.getElementById('button4.2').style.background = '#af230a'
-            document.getElementById('button4.3').style.background = '#af230a'
-            document.getElementById('button4g').disabled = true
-            document.getElementById('button4.1').disabled = true
-            document.getElementById('button4.2').disabled = true
-            document.getElementById('button4.3').disabled = true
+            document.getElementById('ovraag3').disabled = true
+            document.getElementById('goedzo4').innerHTML = 'Goed!'
+        } else {
+            document.getElementById('goedzo3').innerHTML = 'Fout!'
+            document.getElementById('ovraag3').disabled = true
         }
+    } else {
+        window.alert('U moet nog een van de vorige vragen invullen.')
     }
-    if (vraag == 5) {
-        if (antwoord == 'goed') {
+}
+
+function ov4(openvraag) {
+    if (openvraag == openvraagnum) {
+        openvraagnum++
+        let ovraag4 = document.getElementById('textinput4').value
+        if (ovraag4 === 'iniatator') {
             score++
-            document.getElementById('button5g').style.background = '#13df50'
-            document.getElementById('button5.1').style.background = '#af230a'
-            document.getElementById('button5.2').style.background = '#af230a'
-            document.getElementById('button5.3').style.background = '#af230a'
-            document.getElementById('button5g').disabled = true
-            document.getElementById('button5.1').disabled = true
-            document.getElementById('button5.2').disabled = true
-            document.getElementById('button5.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button5g').style.background = '#13df50'
-            document.getElementById('button5.1').style.background = '#af230a'
-            document.getElementById('button5.2').style.background = '#af230a'
-            document.getElementById('button5.3').style.background = '#af230a'
-            document.getElementById('button5g').disabled = true
-            document.getElementById('button5.1').disabled = true
-            document.getElementById('button5.2').disabled = true
-            document.getElementById('button5.3').disabled = true
+            console.log('goed')
+            document.getElementById('ovraag4').disabled = true
+            document.getElementById('goedzo4').innerHTML = 'Goed!'
+        } else {
+            document.getElementById('goedzo4').innerHTML = 'Fout!'
+            document.getElementById('ovraag4').disabled = true
         }
+    } else {
+        window.alert('U moet nog een van de vorige vragen invullen.')
     }
-    if (vraag == 6) {
-        if (antwoord == 'goed') {
+}
+
+function ov5(openvraag) {
+    if (openvraag == openvraagnum) {
+        let ovraag5 = document.getElementById('textinput5').value
+        if (ovraag5 === 'duelist') {
             score++
-            document.getElementById('button6g').style.background = '#13df50'
-            document.getElementById('button6.1').style.background = '#af230a'
-            document.getElementById('button6.2').style.background = '#af230a'
-            document.getElementById('button6.3').style.background = '#af230a'
-            document.getElementById('button6g').disabled = true
-            document.getElementById('button6.1').disabled = true
-            document.getElementById('button6.2').disabled = true
-            document.getElementById('button6.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button6g').style.background = '#13df50'
-            document.getElementById('button6.1').style.background = '#af230a'
-            document.getElementById('button6.2').style.background = '#af230a'
-            document.getElementById('button6.3').style.background = '#af230a'
-            document.getElementById('button6g').disabled = true
-            document.getElementById('button6.1').disabled = true
-            document.getElementById('button6.2').disabled = true
-            document.getElementById('button6.3').disabled = true
+            console.log('goed')
+            document.getElementById('ovraag5').disabled = true
+            document.getElementById('goedzo5').innerHTML = 'Goed!'
+        } else {
+            document.getElementById('goedzo1').innerHTML = 'Fout!'
+            document.getElementById('ovraag1').disabled = true
         }
+    } else {
+        window.alert('U moet nog een van de vorige vragen invullen.')
     }
-    if (vraag == 7) {
-        if (antwoord == 'goed') {
-            score++
-            document.getElementById('button7g').style.background = '#13df50'
-            document.getElementById('button7.1').style.background = '#af230a'
-            document.getElementById('button7.2').style.background = '#af230a'
-            document.getElementById('button7.3').style.background = '#af230a'
-            document.getElementById('button7g').disabled = true
-            document.getElementById('button7.1').disabled = true
-            document.getElementById('button7.2').disabled = true
-            document.getElementById('button7.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button7g').style.background = '#13df50'
-            document.getElementById('button7.1').style.background = '#af230a'
-            document.getElementById('button7.2').style.background = '#af230a'
-            document.getElementById('button7.3').style.background = '#af230a'
-            document.getElementById('button7g').disabled = true
-            document.getElementById('button7.1').disabled = true
-            document.getElementById('button7.2').disabled = true
-            document.getElementById('button7.3').disabled = true
+}
+
+function krijgscore() {
+    const container = document.getElementById('scoreveld');
+    if (openvraagnum == 14 && numquiz == 9) {
+        if (container) {
+            for (let i = 0; i < score; i++) {
+                let imgel = document.createElement('img');
+                imgel.src = scoreimg[0];
+                container.appendChild(imgel);
+                document.getElementById('score').disabled = true
+            }
+        } else {
+            console.log('container not found')
         }
-    }
-    if (vraag == 8) {
-        if (antwoord == 'goed') {
-            score++
-            document.getElementById('button8g').style.background = '#13df50'
-            document.getElementById('button8.1').style.background = '#af230a'
-            document.getElementById('button8.2').style.background = '#af230a'
-            document.getElementById('button8.3').style.background = '#af230a'
-            document.getElementById('button8g').disabled = true
-            document.getElementById('button8.1').disabled = true
-            document.getElementById('button8.2').disabled = true
-            document.getElementById('button8.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button8g').style.background = '#13df50'
-            document.getElementById('button8.1').style.background = '#af230a'
-            document.getElementById('button8.2').style.background = '#af230a'
-            document.getElementById('button8.3').style.background = '#af230a'
-            document.getElementById('button8g').disabled = true
-            document.getElementById('button8.1').disabled = true
-            document.getElementById('button8.2').disabled = true
-            document.getElementById('button8.3').disabled = true
-        }
-    }
-    if (vraag == 9) {
-        if (antwoord == 'goed') {
-            score++
-            document.getElementById('button9g').style.background = '#13df50'
-            document.getElementById('button9.1').style.background = '#af230a'
-            document.getElementById('button9.2').style.background = '#af230a'
-            document.getElementById('button9.3').style.background = '#af230a'
-            document.getElementById('button9g').disabled = true
-            document.getElementById('button9.1').disabled = true
-            document.getElementById('button9.2').disabled = true
-            document.getElementById('button9.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button9g').style.background = '#13df50'
-            document.getElementById('button9.1').style.background = '#af230a'
-            document.getElementById('button9.2').style.background = '#af230a'
-            document.getElementById('button9.3').style.background = '#af230a'
-            document.getElementById('button9g').disabled = true
-            document.getElementById('button9.1').disabled = true
-            document.getElementById('button9.2').disabled = true
-            document.getElementById('button9.3').disabled = true
-        }
-    }
-    if (vraag == 10) {
-        if (antwoord == 'goed') {
-            score++
-            document.getElementById('button10g').style.background = '#13df50'
-            document.getElementById('button10.1').style.background = '#af230a'
-            document.getElementById('button10.2').style.background = '#af230a'
-            document.getElementById('button10.3').style.background = '#af230a'
-            document.getElementById('button10g').disabled = true
-            document.getElementById('button10.1').disabled = true
-            document.getElementById('button10.2').disabled = true
-            document.getElementById('button10.3').disabled = true
-        } else if (antwoord == 'fout') {
-            document.getElementById('button10g').style.background = '#13df50'
-            document.getElementById('button10.1').style.background = '#af230a'
-            document.getElementById('butto10.2').style.background = '#af230a'
-            document.getElementById('button10.3').style.background = '#af230a'
-            document.getElementById('button10g').disabled = true
-            document.getElementById('button10.1').disabled = true
-            document.getElementById('button10.2').disabled = true
-            document.getElementById('button10.3').disabled = true
-        }
+    } else {
+        window.alert('U moet eerst alle vragen beatnwoorden voordat u uw score kan krijgen.')
     }
 }

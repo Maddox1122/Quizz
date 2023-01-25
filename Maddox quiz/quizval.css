@@ -53,7 +53,7 @@ li:focus {
     font-family: sans-serif;
 }
 
-.links-top1 {
+.links-top1,.links-top3 {
     display: flex;
     flex-direction: column;
     align-self:flex-start;
@@ -61,23 +61,7 @@ li:focus {
     padding: 1.5em;
 }
 
-.links-top2 {
-    display: flex;
-    flex-direction: column;
-    align-self:flex-end;
-    margin-right: 2em;
-    padding: 1.5em;
-}
-
-.links-top3 {
-    display: flex;
-    flex-direction: column;
-    align-self:flex-start;
-    margin-left: 2em;
-    padding: 1.5em;
-}
-
-.links-top4 {
+.links-top2,.links-top4 {
     display: flex;
     flex-direction: column;
     align-self:flex-end;
@@ -153,61 +137,22 @@ li:focus {
     transform: scale(1.05);
 }
 
-.incorrect {
-    width: 30em;
+.vraag11,.vraag12,.vraag13,.vraag14,.vraag15 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.naaminput {
+    width: 10em;
     padding: 16px;
     margin: 4px;
     border-radius: 6em;
+    background-color: #eb7a39;
     color: black;
     font-size: 1.2em;
     border: none;
-    background-color: #af230a;
-}
-
-.correct {
-    width: 30em;
-    padding: 16px;
-    margin: 4px;
-    border-radius: 6em;
-    color: black;
-    font-size: 1.2em;
-    border: none;
-    background-color: #13df50;
-}
-
-.vraag11 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.vraag12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.vraag13 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.vraag14 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.vraag15 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 input[text] {
@@ -221,7 +166,7 @@ input[text] {
     border: none;
 }
 
-.textinput {
+.textinput1,.textinput2,.textinput3,.textinput4,.textinput5 {
     width: 30em;
     padding: 16px;
     margin: 4px;
@@ -253,4 +198,17 @@ input[text] {
 
 text:focus, input:focus{
     outline: none;
+}
+
+.scoreveld > img {
+    width: 5%;
+    height: auto;
+}
+
+.scoreveld {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
