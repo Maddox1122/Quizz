@@ -3,6 +3,14 @@ body{
     color: rgb(43, 143, 43);
 }
 
+.itekst{
+    color: aliceblue;
+}
+
+.iknop{
+    color: rgb(139, 0, 2);
+}
+
 .primary-header {
     padding: 1rem;
     font-family: sans-serif;
@@ -39,6 +47,18 @@ li:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 500px;
+    background-color: rgb(17, 39, 98);
+    border-radius: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .titelt{
@@ -58,7 +78,7 @@ li:focus {
 }
 
 .vvak{
-    width: 500px;
+    width: 800px;
     background-color: rgb(17, 39, 98);
     border-radius: 100px;
     margin-bottom: 50px;
@@ -80,4 +100,26 @@ li:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.oinput{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.cknopje{
+    margin-bottom: 10px;
+}
+
+.scorek{
+    background-color: rgb(17, 39, 98);
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(43, 143, 43);
+    font-weight: bolder;
 }
