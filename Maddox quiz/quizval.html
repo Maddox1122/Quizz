@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <script src="./quizval.js"></script>
     <link rel="stylesheet" href="./quizval.css">
 </head>
 
 <body>
-    <header class="primary-header">
+    <header id="header" class="primary-header">
         <nav class="nav">
             <div>
                 <img src="media/logoval.png" alt="" width="65px">
@@ -61,7 +60,7 @@
         <section id="quiz" class="quiz">
             <div class="quiz-titel">
                 <h1>Hier start je de quiz</h1>
-                <label for="Naam">Naam</label><input type="text" name="naam" class="naaminput" id="naaminput">
+                <label class="label-naam" for="Naam">Naam:</label><input type="text" name="naam" class="naaminput" id="naaminput">
                 <h2>Voordat je de vragen start lees de informatie hierboven &uarr;</h2>
                 <h2>U heeft 1 poging voor de vraag</h2>
             </div>
@@ -250,8 +249,7 @@
                 <div class="vraag11">
                     <h2>Vraag 11:</h2>
                     <h2>Wat is Viper haar rol?</h2>
-                    <input id="textinput1" class="textinput1" type="text" name="vraag11"
-                        placeholder="Vul hier uw antwoord in" id="vraag11">
+                    <input id="textinput1" class="textinput1" type="text" name="vraag11" placeholder="Vul hier uw antwoord in">
                     <div id="goedzo1"></div>
                     <button id="ovraag1" class="antwoord" onclick="ov1(10)">Check antwoord</button>
                 </div>
@@ -260,8 +258,7 @@
                 <div class="vraag12">
                     <h2>Vraag 12:</h2>
                     <h2>Wat is Jett haar rol?</h2>
-                    <input class="textinput2" type="text" name="vraag12" placeholder="Vul hier uw antwoord in"
-                        id="vraag11">
+                    <input class="textinput2" id="textinput2" type="text" name="vraag12" placeholder="Vul hier uw antwoord in">
                     <div id="goedzo2"></div>
                     <button id="ovraag2" class="antwoord" onclick="ov2(11)">Check antwoord</button>
                 </div>
@@ -270,8 +267,7 @@
                 <div class="vraag13">
                     <h2>Vraag 13:</h2>
                     <h2>Wat is Chamber zijn rol?</h2>
-                    <input class="textinput3" type="text" name="vraag13" placeholder="Vul hier uw antwoord in"
-                        id="vraag11">
+                    <input class="textinput3" id="textinput3" type="text" name="vraag13" placeholder="Vul hier uw antwoord in">
                     <div id="goedzo3"></div>
                     <button id="ovraag3" class="antwoord" onclick="ov3(12)">Check antwoord</button>
                 </div>
@@ -280,8 +276,7 @@
                 <div class="vraag14">
                     <h2>Vraag 14:</h2>
                     <h2>Wat is Sova zijn rol?</h2>
-                    <input class="textinput4" type="text" name="vraag14" placeholder="Vul hier uw antwoord in"
-                        id="vraag11">
+                    <input class="textinput4" id="textinput4"  type="text" name="vraag14" placeholder="Vul hier uw antwoord in">
                     <div id="goedzo4"></div>
                     <button id="ovraag4" class="antwoord" onclick="ov4(13)">Check antwoord</button>
                 </div>
@@ -290,20 +285,20 @@
                 <div class="vraag15">
                     <h2>Vraag 15:</h2>
                     <h2>Wat is Reyna zijn rol?</h2>
-                    <input class="textinput5" type="text" name="vraag15" placeholder="Vul hier uw antwoord in"
-                        id="vraag11">
+                    <input class="textinput5" id="textinput5" type="text" name="vraag15" placeholder="Vul hier uw antwoord in">
                     <div id="goedzo5"></div>
-                    <button id="ovraag5" class="antwoord" onclick="ov5(15)">Check antwoord</button>
+                    <button id="ovraag5" class="antwoord" onclick="ov5(14)">Check antwoord</button>
                 </div>
             </div>
             <div class="score">
                 <h2>Voor je score klik op de knop &darr;</h2>
                 <button onclick="krijgscore()" class="antwoord" id="score">Krijg score</button>
+                <div class="scoreveldtxt"></div>
                 <div class="scoreveld" id="scoreveld">
                 </div>
             </div>
         </section>
     </main>
 </body>
-
+<script src="quizval.js"></script>
 </html>
