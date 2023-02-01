@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
+canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 *{
     margin: 0;
@@ -10,15 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-image: url('https://www.gadgetgear.nl/wp-content/uploads/2022/11/MWII-RELEASE-TOUT.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 ::selection{
     color: #fff;
-    background: #A1C349;
+    background: #4bbecf;
 }
 
 .start_btn,
@@ -45,12 +45,12 @@ body{
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #33ff33;
+    color: #4bbecf;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #050505;
+    background: #f2f2f2;
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ body{
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #33ff33;
+    color: #4bbecf;
 }
 .info_box .buttons{
     height: 60px;
@@ -108,7 +108,7 @@ body{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #33ff33;
+    border: 1px solid #4bbecf;
     transition: all 0.3s ease;
 }
 
@@ -142,8 +142,8 @@ body{
 
 .quiz_box header .timer{
     color: #000000;
-    background: #b3ffb3;
-    border: 1px solid #80ff80;
+    background: #4bbecf;
+    border: 1px solid #4bbecf;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -168,8 +168,8 @@ body{
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #80ffcc;
-    border: 1px solid #00ff99;
+    background: #4bbecf;
+    border: 1px solid #4bbecf;
     user-select: none;
 }
 
@@ -178,7 +178,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #00ff99;
+    background: #4bbecf;
 }
 
 section{
@@ -197,8 +197,8 @@ section .option_list{
 }
 
 section .option_list .option{
-    background: #81d31c;
-    border: 1px solid #81d31c;
+    background: #4bbecf;
+    border: 1px solid #4bbecf;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -215,21 +215,21 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #009900;
-    background: #99ff99;
-    border: 1px solid #008000;
+    color: #4bbecf;
+    background: white;
+    border: 1px solid #4bbecf;
 }
 
 section .option_list .option.correct{
     color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    background: #4bbecf;
+    border: 1px solid #4bbecf;
 }
 
 section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    color: #f2f2f2;
+    background: #4bbecf;
+    border: 1px solid #4bbecf;
 }
 
 section .option_list .option.disabled{
@@ -328,7 +328,7 @@ footer button.show{
 
 .result_box .icon{
     font-size: 100px;
-    color: #00ff99;
+    color: #4bbecf;
     margin-bottom: 10px;
 }
 
@@ -364,25 +364,25 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #009933;
+    border: 1px solid #4bbecf;
     transition: all 0.3s ease-in-out;
 }
 
 .buttons button.restart{
     color: #fff;
-    background: #1aff66;
+    background: #4bbecf;
 }
 
 .buttons button.restart:hover{
-    background: #00b33c;
+    background: #4bbecf;
 }
 
 .buttons button.quit{
-    color: #1aff66;
+    color: #4bbecf;
     background: #fff;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #00b33c;
+    background: #4bbecf;
 }
